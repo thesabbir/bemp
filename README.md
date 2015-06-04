@@ -1,18 +1,21 @@
-## bemp (brew nginx mysql php)
+## BEMP (brew nginx mysql php)
 Homebrew nginx, PHP5.6  & mysql installation script.
 
-##Requirements:
+##Requirements
  * Homebrew installed
  * XCode CLI installled
 
-##How to install:
+##How to install
 
-via curl: 
-`curl -L https://raw.githubusercontent.com/thesabbir/bemp/master/bemp.sh | bash`
+via curl:
+```
+curl -L https://raw.githubusercontent.com/thesabbir/bemp/master/bemp.sh | bash
+```
 
 via wget:
-`wget https://raw.githubusercontent.com/thesabbir/bemp/master/bemp.sh -O - | bash`
-
+```
+wget https://raw.githubusercontent.com/thesabbir/bemp/master/bemp.sh -O - | bash
+```
 
 #License:
 
