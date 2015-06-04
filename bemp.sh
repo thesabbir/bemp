@@ -64,4 +64,13 @@ echo -e "\n${green}PHP installed${reset}"
 php -v
 
 echo -e "\n${red}Please run \"mysql_secure_installation\" to secure your mysql installation${reset}"
-echo -e "\n${green}All Done!${reset}"
+echo -e "\n${green}Installation Done!${reset}"
+
+
+read -p "Do you want to configure nginx with php-fpm (root access required & overwrites your existing nginx configurations)? [y/n]   " -n 1 -r
+echo ""
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	cd nginx
+	./nginx.sh
+fi
