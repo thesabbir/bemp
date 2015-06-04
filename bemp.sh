@@ -21,7 +21,7 @@ echo -e "\nChecking requirements...\n"
  fi
 
 echo -e "Updating Homebrew... Please wait...\n"
-# brew update
+brew update
 
 echo -e "\nTapping \"homebrew-php\""
 brew tap homebrew/homebrew-php
