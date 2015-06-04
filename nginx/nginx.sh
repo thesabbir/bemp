@@ -23,7 +23,8 @@ echo -e "\nTesting nginx configuration"
 sudo nginx -t
 
 echo -e "\nRestrating nginx"
-sudo nginx -s reopen
+sudo nginx -s stop
+sudo nginx
 
 echo -e "Nginx is now configured with php-fpm.\n"
 echo "Visit http://localhost in your browser."
