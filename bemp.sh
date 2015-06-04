@@ -64,4 +64,4 @@ echo -e "\n${green}PHP installed${reset}"
 php -v
 
 echo -e "\n${red}Please run \"mysql_secure_installation\" to secure your mysql installation${reset}"
-echo -e "\nA${green}ll Done!${reset}"
+echo -e "\n${green}All Done!${reset}"
