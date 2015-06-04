@@ -17,7 +17,7 @@ via wget:
 wget https://raw.githubusercontent.com/thesabbir/bemp/master/bemp.sh -O - | bash
 ```
 
-#License:
+##License
 
 The MIT License
 
