@@ -1,12 +1,27 @@
 #!/bin/bash
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+
 echo -e "\n"
 echo -e "Welcome to BEMP installation script"
 echo -e "by sabbir"
 echo -e "https://github.com/thesabbir/bemp"
 echo -e "==================================\n"
 
+echo -e "\nChecking requirements...\n"
+
+ if hash brew 2>/dev/null
+ then
+    echo -e "${green}√ homebrew installed\n${reset}"
+ else
+ 	echo "${red}Homebrew is required!${reset}"
+ 	echo "Please install homebrew form http://brew.sh"
+ 	exit 1
+ fi
+
 echo -e "Updating Homebrew... Please wait...\n"
-brew update
+# brew update
 
 echo -e "\nTapping \"homebrew-php\""
 brew tap homebrew/homebrew-php
@@ -39,13 +54,14 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php56.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 
-echo -e "\n"
+echo -e "\n${green}Nginx installed${reset}"
 nginx -v
 
-echo -e "\n"
+echo -e "\n${green}Mysql installed${reset}"
 mysqld --version
 
-echo -e "\n"
+echo -e "\n${green}PHP installed${reset}"
 php -v
 
-echo -e "\nDone!"
+echo -e "\n${red}Please run \"mysql_secure_installation\" to secure your mysql installation${reset}"
+echo -e "\nA${green}ll Done!${reset}"
