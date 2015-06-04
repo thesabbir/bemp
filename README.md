@@ -1,6 +1,12 @@
 ## BEMP (brew nginx mysql php)
 Homebrew nginx, PHP5.6  & mysql installation script.
 
+## What it does?
+* Install's NGINX, PHP & MYSQL via Homebrew.
+* Configures nginx with php-fpm.
+* Configures a default nginx virtual host.
+* makes `/var/www` your documents root.
+
 ##Requirements
  * Homebrew installed
  * XCode CLI installled
@@ -16,6 +22,10 @@ via wget:
 ```
 wget https://raw.githubusercontent.com/thesabbir/bemp/master/install.sh -O - | bash
 ```
+
+##TODO
+* Homebrew & other requirements auto installation.
+* Use homebrew service instead of launchctl.
 
 ##License
 
