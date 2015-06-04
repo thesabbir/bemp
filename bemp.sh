@@ -67,7 +67,8 @@ echo -e "\n${red}Please run \"mysql_secure_installation\" to secure your mysql i
 echo -e "\n${green}Installation Done!${reset}"
 
 
-# This doesn't work when installing from github
+
+# FIXME: This doesn't work when installing from github
 # currently configuring without confirmation
 
 # echo -e "Do you want to configure nginx with php-fpm ?"
