@@ -7,6 +7,10 @@ Homebrew nginx, PHP5.6  & mysql installation script.
 * Configures a default nginx virtual host.
 * makes `/var/www` your documents root.
 
+##Notes
+* Currently overwrites any existing `nginx.conf`.
+* Currently adds those services to users startup.
+
 ##Requirements
  * Homebrew installed
  * XCode CLI installled
@@ -26,6 +30,7 @@ wget https://raw.githubusercontent.com/thesabbir/bemp/master/install.sh -O - | b
 ##TODO
 * Homebrew & other requirements auto installation.
 * Use homebrew service instead of launchctl.
+* Give choice for either to launch at startup or not.
 
 ##License
 
