@@ -66,11 +66,18 @@ php -v
 echo -e "\n${red}Please run \"mysql_secure_installation\" to secure your mysql installation${reset}"
 echo -e "\n${green}Installation Done!${reset}"
 
-echo -e "Do you want to configure nginx with php-fpm ?"
-echo -e "${red}root access required & overwrites your existing nginx configurations!${reset}"
 
-read -p "Press y to continue [y/n]" -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-	cd nginx
-	./nginx.sh
-fi
+# This doesn't work when installing from github
+# currently configuring without confirmation
+
+# echo -e "Do you want to configure nginx with php-fpm ?"
+# echo -e "${red}root access required & overwrites your existing nginx configurations!${reset}"
+
+# read -p "Press y to continue [y/n]" -n 1 -r
+#if [[ $REPLY =~ ^[Yy]$ ]]; then
+#	cd nginx
+#	./nginx.sh
+#fi
+
+cd nginx
+./nginx.sh
