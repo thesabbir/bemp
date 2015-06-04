@@ -9,12 +9,12 @@ Homebrew nginx, PHP5.6  & mysql installation script.
 
 via curl:
 ```
-curl -L https://raw.githubusercontent.com/thesabbir/bemp/master/bemp.sh | bash
+curl -L https://raw.githubusercontent.com/thesabbir/bemp/master/install.sh | bash
 ```
 
 via wget:
 ```
-wget https://raw.githubusercontent.com/thesabbir/bemp/master/bemp.sh -O - | bash
+wget https://raw.githubusercontent.com/thesabbir/bemp/master/install.sh -O - | bash
 ```
 
 ##License
