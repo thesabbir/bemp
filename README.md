@@ -27,6 +27,14 @@ via wget:
 wget https://raw.githubusercontent.com/thesabbir/bemp/master/install.sh -O - | bash
 ```
 
+manually:
+```
+git clone https://github.com/thesabbir/bemp.git ~/temp
+cd ~/temp/bemp
+./bemp.sh
+```
+
+
 ##TODO
 * Homebrew & other requirements auto installation.
 * Use homebrew service instead of launchctl.
