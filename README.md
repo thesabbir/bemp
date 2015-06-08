@@ -8,7 +8,6 @@ Homebrew nginx, PHP5.6  & mysql installation script.
 * makes `/var/www` your documents root.
 
 ##Notes
-* Currently overwrites any existing `nginx.conf`.
 * Currently adds those services to users startup.
 
 ##Requirements
