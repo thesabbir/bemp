@@ -28,7 +28,7 @@ wget https://raw.githubusercontent.com/thesabbir/bemp/master/install.sh -O - | b
 
 manually:
 ```
-git clone https://github.com/thesabbir/bemp.git ~/temp
+git clone https://github.com/thesabbir/bemp.git ~/temp/bemp
 cd ~/temp/bemp
 ./bemp.sh
 ```
